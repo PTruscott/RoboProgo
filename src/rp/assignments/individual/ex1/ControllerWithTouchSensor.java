@@ -27,7 +27,7 @@ public class ControllerWithTouchSensor implements StoppableRunnable, TouchSensor
 
 		while (running) {
 			float move = (float) 1.0;
-			pilot.travel(move, true);
+			pilot.forward();
 
 			while (pilot.isMoving() && !bumped) {
 				Delay.msDelay(10);

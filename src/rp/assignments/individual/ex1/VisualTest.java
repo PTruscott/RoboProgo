@@ -7,7 +7,7 @@ import rp.robotics.testing.ZoneSequenceTestWithSim;
 public class VisualTest {
 	public static void main(String[] args) throws ClassNotFoundException {
 		Ex1Tests tests = new Ex1Tests();
-		ZoneSequenceTestWithSim<DifferentialDriveRobotPC, ?> test = tests.createBumperTest();
+		ZoneSequenceTestWithSim<DifferentialDriveRobotPC, ?> test = tests.createVirtualBumperTest();
 		TestViewer demo = new TestViewer(test, test.getSimulation());
 		demo.run();
 	}
