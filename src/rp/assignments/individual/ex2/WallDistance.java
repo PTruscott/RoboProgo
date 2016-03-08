@@ -27,7 +27,7 @@ public class WallDistance implements StoppableRunnable {
 	public void run() {
 		running = true;
 		while (running) {
-			Delay.msDelay(200);
+			Delay.msDelay(150);
 			System.out.println(range.getRange());
 			Double speed = (double)-(optDist-range.getRange());
 			speed = (Math.abs(speed) <= m_pilot.getMaxTravelSpeed()) ? speed : Math.signum(speed) * m_pilot.getMaxTravelSpeed();
