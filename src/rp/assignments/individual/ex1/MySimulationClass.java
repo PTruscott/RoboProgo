@@ -1,11 +1,6 @@
 package rp.assignments.individual.ex1;
 
-import org.junit.runner.JUnitCore;
-import org.junit.runner.Result;
-import org.junit.runner.notification.Failure;
-
 import lejos.robotics.navigation.Pose;
-import rp.robotics.DifferentialDriveRobotPC;
 import rp.robotics.control.RandomWalk;
 import rp.robotics.simulation.MapBasedSimulation;
 import rp.robotics.simulation.SimulatedRobots;
@@ -27,7 +22,7 @@ public class MySimulationClass {
 		// Create the simulation using the given map. This simulation can run
 		// with a GUI.
 		MapBasedSimulation sim = new MapBasedSimulation(TestMaps.EMPTY_8_x_6);
-
+/*
 		// Add a robot of a given configuration to the simulation. The return
 		// value is the object you can use to control the robot.
 		//
@@ -53,7 +48,7 @@ public class MySimulationClass {
 		
 		// Start the controller running -- this should move your robot
 		controller.run();
-		
+		*/
 
 	}
 
